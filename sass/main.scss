@@ -1,9 +1,12 @@
 @import "./Utils/variables";
 @import "./Base/mixin";
-
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
 body{
     @include police_texte;
-    margin: 0px;
+
 }
 
 footer h3{
@@ -14,15 +17,23 @@ img{
     max-width: 100%;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+  }
+  
+  ul{
+    list-style: none;
+    padding: 0;
+  }
+  
+
             /*header*/
         
 header{
   @include header
 }
-
-
-
-
+ 
 
 /* localisation */
 .localisation{
@@ -31,6 +42,7 @@ align-items: center;
 justify-content: center;
 background-color: #f0f0f0;
 width: 100%;
+padding: 15px;
 i{
     position: relative;
     right: 13px;
@@ -38,4 +50,14 @@ i{
 p{
     font-size: 20px;
 }
+}
+
+/*nav*/
+nav{
+background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+    padding-top: 40px;
 }
