@@ -1,0 +1,23 @@
+@mixin police_texte {
+font-family: "roboto";
+}
+ 
+@mixin police_logo {
+    font-family: "Shrikhand";
+}
+
+@mixin header {
+    width: 100%;
+    height: 60px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+.logo_header{
+    height: 30px;   
+}
+img.logo{
+height: 100%;
+}
+    
+}
+

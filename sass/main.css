@@ -1,0 +1,51 @@
+body {
+  font-family: "roboto";
+  margin: 0;
+}
+
+footer h3 {
+  font-family: "Shrikhand";
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+ul{
+  list-style: none;
+}
+/*header*/
+header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .logo_header {
+  height: 30px;
+}
+header img.logo {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* localisation */
+.localisation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  width: 100%;
+}
+.localisation i {
+  position: relative;
+  right: 13px;
+}
+.localisation p {
+  font-size: 20px;
+}/*# sourceMappingURL=main.css.map */

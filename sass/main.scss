@@ -1,0 +1,41 @@
+@import "./Utils/variables";
+@import "./Base/mixin";
+
+body{
+    @include police_texte;
+    margin: 0px;
+}
+
+footer h3{
+   @include police_logo
+}
+
+img{
+    max-width: 100%;
+}
+
+            /*header*/
+        
+header{
+  @include header
+}
+
+
+
+
+
+/* localisation */
+.localisation{
+    display: flex;
+align-items: center;
+justify-content: center;
+background-color: #f0f0f0;
+width: 100%;
+i{
+    position: relative;
+    right: 13px;
+}
+p{
+    font-size: 20px;
+}
+}
