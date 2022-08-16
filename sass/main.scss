@@ -6,11 +6,10 @@
 }
 body{
     @include police_texte;
-
 }
 
 footer h3{
-   @include police_logo
+   @include police_logo_titre
 }
 
 img{
@@ -22,7 +21,7 @@ a{
     color: black;
   }
   
-  ul{
+ul{
     list-style: none;
     padding: 0;
   }
@@ -37,7 +36,7 @@ header{
 
 /* localisation */
 .localisation{
-    display: flex;
+display: flex;
 align-items: center;
 justify-content: center;
 background-color: #f0f0f0;
@@ -53,11 +52,37 @@ p{
 }
 
 /*nav*/
-nav{
-background-color: #f7f7f7;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 200px;
-    padding-top: 40px;
-}
+.presentation{
+    background-color: #f7f7f7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 280px;
+        padding-top: 40px;
+    &__titre{
+        padding: 0 45px 15px 45px;
+        text-align: center;}
+    & p{
+        text-align: center;
+        margin: 0 35px 10px 35px;
+    }
+    &__nos_restaurants{
+        border-radius: 25px;
+        height: 50px;
+        border: none;
+        background: linear-gradient(175deg, #FF79DA, #9356DC);
+        color: white;
+        box-shadow: 0px 5px 9px 0px rgb(0 0 0 / 25%);
+        width: 50%;
+        margin-top: 20px;
+        font-weight: 700;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.10) ;
+            transition-duration: 1s;
+        }
+    }
+    }
+        
+    
+   

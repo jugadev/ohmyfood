@@ -4,11 +4,11 @@
 }
 
 body {
-  font-family: "roboto";
+  font-family: "roboto", sans-serif;
 }
 
 footer h3 {
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", sans-serif;
 }
 
 img {
@@ -58,11 +58,35 @@ header img.logo {
 }
 
 /*nav*/
-nav {
+.presentation {
   background-color: #f7f7f7;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 200px;
+  height: 280px;
   padding-top: 40px;
+}
+.presentation__titre {
+  padding: 0 45px 15px 45px;
+  text-align: center;
+}
+.presentation p {
+  text-align: center;
+  margin: 0 35px 10px 35px;
+}
+.presentation__nos_restaurants {
+  border-radius: 25px;
+  height: 50px;
+  border: none;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  color: white;
+  box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.25);
+  width: 50%;
+  margin-top: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.presentation__nos_restaurants:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
 }/*# sourceMappingURL=main.css.map */

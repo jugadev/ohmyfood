@@ -1,9 +1,9 @@
 @mixin police_texte {
-font-family: "roboto";
+font-family: "roboto", sans-serif;
 }
  
-@mixin police_logo {
-    font-family: "Shrikhand";
+@mixin police_logo_titre {
+    font-family: "Shrikhand",sans-serif;
 }
 
 @mixin header {
