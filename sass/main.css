@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   box-sizing: border-box;
@@ -47,7 +48,7 @@ header img.logo {
   justify-content: center;
   background-color: #f0f0f0;
   width: 100%;
-  padding: 15px;
+  padding: 7px;
 }
 .localisation i {
   position: relative;
@@ -57,7 +58,7 @@ header img.logo {
   font-size: 20px;
 }
 
-/*nav*/
+/*presentation*/
 .presentation {
   background-color: #f7f7f7;
   display: flex;
@@ -89,4 +90,68 @@ header img.logo {
 .presentation__nos_restaurants:hover {
   transform: scale(1.1);
   transition-duration: 1s;
+}
+
+/*FONCTIONNEMENT */
+ol {
+  list-style: none;
+  counter-reset: li;
+  padding: 0;
+}
+
+.explication li::before {
+  content: counter(li);
+  border: solid;
+  border-radius: 100px;
+  display: inline-block;
+  width: 25px;
+  margin-left: -1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #9356DC;
+  color: white;
+  height: 25px;
+  position: relative;
+  top: 20px;
+}
+
+li {
+  counter-increment: li;
+}
+
+li {
+  counter-increment: li;
+}
+
+.explication {
+  width: 100%;
+  padding: 40px 20px 40px 30px;
+}
+.explication__étape {
+  display: flex;
+  width: 100%;
+  background-color: #f6f6f6;
+  height: 70px;
+  margin-top: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 2px 10px 5px #f2f2f2;
+  cursor: pointer;
+}
+.explication__étape:hover {
+  background-color: #F5EDFF;
+}
+.explication__étape i {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  color: #7E7E7E;
+}
+.explication__étape p {
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  font-size: 16px;
 }/*# sourceMappingURL=main.css.map */
