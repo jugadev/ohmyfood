@@ -132,7 +132,9 @@ p{
         width: 100%;
             background-color: #f6f6f6;
             padding: 20px;
-
+        & h2{
+            margin-bottom: 15px;
+        }
         &__carte_restaurant{
             width: 100%;
             background-color: white;
