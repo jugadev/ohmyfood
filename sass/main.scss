@@ -170,22 +170,18 @@ p{
             padding: 10px 0 10px 10px;
             position: relative;
         
-            & i{
+            & i{  
             justify-content: end;
             display: flex;
             position: absolute;
             right: 30px;
             bottom: 25px;
             font-size: 25px;
-            &:hover {
-                background-clip: text;
-                -webkit-text-fill-color:transparent;
-                background: linear-gradient(250deg, #FF79DA, #9356DC);
-                color: transparent;
+           @include heart_hover
             }
         }
     }
-}
+
     
 /* FOOTER */
 
@@ -223,7 +219,9 @@ p{
         
     }
     & i{
+        cursor: pointer;
         font-size: 20px;
+        @include heart_hover
     }
 }
 

@@ -219,11 +219,12 @@ li {
   font-size: 25px;
 }
 .restaurants__texte_conteneur i:hover {
+  background: linear-gradient(250deg, #FF79DA, #9356DC);
   -webkit-background-clip: text;
           background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(250deg, #FF79DA, #9356DC);
+  -webkit-text-fill-color: linear-gradient(250deg, #FF79DA, #9356DC);
   color: transparent;
+  font-weight: 900;
 }
 
 /* FOOTER */
@@ -283,7 +284,16 @@ li {
   font-family: "Shrikhand", sans-serif;
 }
 .menu i {
+  cursor: pointer;
   font-size: 20px;
+}
+.menu i:hover {
+  background: linear-gradient(250deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: linear-gradient(250deg, #FF79DA, #9356DC);
+  color: transparent;
+  font-weight: 900;
 }
 
 .conteneur_carte {
