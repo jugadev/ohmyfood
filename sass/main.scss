@@ -67,20 +67,7 @@ p{
         margin: 0 35px 10px 35px;
     }
     &__nos_restaurants{
-        border-radius: 25px;
-        height: 50px;
-        border: none;
-        background: linear-gradient(175deg, #FF79DA, #9356DC);
-        color: white;
-        box-shadow: 0px 5px 9px 0px rgb(0 0 0 / 25%);
-        width: 50%;
-        margin-top: 20px;
-        font-weight: 700;
-        cursor: pointer;
-        &:hover {
-            transform: scale(1.10) ;
-            transition-duration: 0.5s;
-        }
+       @include btn
     }
     }
 
@@ -122,6 +109,7 @@ p{
         cursor: pointer;
     &:hover{
         background-color:#F5EDFF;
+        box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 30%);
     }
     & i{font-size: 25px;
         display: flex;
@@ -152,6 +140,11 @@ p{
             margin-bottom: 30px;
             box-shadow: -1px 3px 9px 1px rgb(0 0 0 / 15%);
             position: relative;
+            &:hover {
+                transform: scale(1.10) ;
+                transition-duration: 0.5s;
+                box-shadow: -1px 3px 9px 1px rgb(0 0 0 / 30%);
+            }
         }
         
         &__image{
@@ -171,21 +164,24 @@ p{
             right: 0.75rem;}
         
         &__texte_conteneur{
-        display: flex;
+            display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 10px 0 0 10px;
+            padding: 10px 0 10px 10px;
+            position: relative;
         
             & i{
             justify-content: end;
             display: flex;
-            position: relative;
+            position: absolute;
             right: 30px;
-            bottom: 35px;
+            bottom: 25px;
             font-size: 25px;
             &:hover {
-                background-clip:initial;
-                 
+                background-clip: text;
+                -webkit-text-fill-color:transparent;
+                background: linear-gradient(250deg, #FF79DA, #9356DC);
+                color: transparent;
             }
         }
     }
@@ -195,4 +191,51 @@ p{
 
 .footer{
     @include pied_de_page;
+}
+
+
+/*PAGE MENU*/
+
+/*Background image*/
+.background_img{
+    max-width: 100%;
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* MENU */
+.menu{
+    margin-top: -34px;
+    border-radius: 40px 40px 0 0;
+    background-color: #f6f6f6;
+    z-index: 1;
+    position: relative;
+    &__header{
+        display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    padding: 15px 0;
+    }
+    & h1{
+        @include police_logo_titre;
+        
+    }
+    & i{
+        font-size: 20px;
+    }
+}
+
+.conteneur_carte{
+    @include conteneur_carte;
+}
+
+.commande{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 50px 0;
+&__btn{
+    @include btn
+}
 }
