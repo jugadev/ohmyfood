@@ -29,13 +29,47 @@ ul {
   padding: 0;
 }
 
+@-webkit-keyframes apparition_menu {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  66% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes apparition_menu {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  66% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 @-webkit-keyframes chargement_accueil {
   to {
     opacity: 0;
     z-index: -10;
   }
 }
-
 @keyframes chargement_accueil {
   to {
     opacity: 0;
@@ -74,8 +108,8 @@ ul {
   position: fixed;
   z-index: 3;
   flex-direction: column;
-  -webkit-animation: chargement_accueil 0s 3s forwards;
-          animation: chargement_accueil 0s 3s forwards;
+  -webkit-animation: chargement_accueil 0s 2.5s forwards;
+          animation: chargement_accueil 0s 2.5s forwards;
 }
 .accueil__chargement {
   display: block;
@@ -391,6 +425,8 @@ li {
   position: relative;
   overflow: hidden;
   transition: all 0.8s;
+  -webkit-animation: apparition_menu 1.5s forwards linear;
+          animation: apparition_menu 1.5s forwards linear;
 }
 .conteneur_carte__carte:hover .conteneur_carte__coche {
   right: 0px;

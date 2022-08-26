@@ -26,6 +26,24 @@ ul{
     padding: 0;
   }
 
+  @keyframes apparition_menu{
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      66% {
+        transform: translateY(10px);
+        opacity: 0;
+      }
+      75% {
+        transform: translateY(5px);
+      }
+      100% {
+        transform: translateY(0px);
+        opacity: 1;
+      }
+  }
+
 @keyframes chargement_accueil{
     to{
         opacity: 0;
@@ -54,7 +72,7 @@ ul{
     position: fixed;
     z-index: 3;
     flex-direction: column;
-    animation: chargement_accueil  0s 3s forwards ;
+    animation: chargement_accueil  0s 2.5s forwards ;
     
     &__chargement{
         display: block;

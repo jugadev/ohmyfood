@@ -111,6 +111,7 @@ font-size: 15px;
     position: relative;
     overflow: hidden;
     transition: all 0.8s;
+    animation: apparition_menu 1.5s forwards linear;
     &:hover{
         & .conteneur_carte__coche{
             right: 0px;
