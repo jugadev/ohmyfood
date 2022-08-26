@@ -83,7 +83,7 @@ header a {
 }
 .presentation p {
   text-align: center;
-  margin: 0 35px 10px 35px;
+  padding: 0 35px 10px 35px;
 }
 .presentation__nos_restaurants {
   border-radius: 25px;
@@ -96,11 +96,11 @@ header a {
   margin-top: 20px;
   font-weight: 700;
   cursor: pointer;
+  transition: all 0.5s;
 }
 .presentation__nos_restaurants:hover {
   transform: scale(1.1);
-  transition-duration: 0.5s;
-  box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.986);
+  box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.75);
 }
 
 /*FONCTIONNEMENT */
@@ -184,10 +184,11 @@ li {
   margin-bottom: 30px;
   box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.15);
   position: relative;
+  transition-property: transform;
+  transition: all 0.5s;
 }
 .restaurants__carte_restaurant:hover {
   transform: scale(1.1);
-  transition-duration: 0.5s;
   box-shadow: -1px 3px 9px 1px rgba(0, 0, 0, 0.3);
 }
 .restaurants__image {
@@ -220,6 +221,7 @@ li {
   right: 30px;
   bottom: 25px;
   font-size: 25px;
+  background-color: white;
 }
 .restaurants__texte_conteneur i:hover {
   background: linear-gradient(250deg, #FF79DA, #9356DC);
@@ -242,7 +244,7 @@ li {
 }
 .footer ul {
   margin-top: 20px;
-  padding: 0 30px 0 30px;
+  padding: 0 30px 0 25px;
 }
 .footer a {
   color: white;
@@ -255,7 +257,7 @@ li {
 }
 .footer h3 {
   font-weight: 100;
-  padding: 25px 0 0 22px;
+  padding: 25px 0 0 25px;
 }
 
 /*PAGE MENU*/
@@ -286,11 +288,11 @@ li {
 .menu h1 {
   font-family: "Shrikhand", sans-serif;
 }
-.menu i {
+.menu i.fa-regular.fa-heart {
   cursor: pointer;
   font-size: 20px;
 }
-.menu i:hover {
+.menu i.fa-regular.fa-heart:hover {
   background: linear-gradient(250deg, #FF79DA, #9356DC);
   -webkit-background-clip: text;
           background-clip: text;
@@ -321,6 +323,18 @@ li {
   cursor: pointer;
   margin: 10px 0;
   display: flex;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.8s;
+}
+.conteneur_carte__carte:hover .conteneur_carte__coche {
+  right: 0px;
+}
+.conteneur_carte__carte:hover .conteneur_carte__conteneur_texte {
+  width: 72%;
+}
+.conteneur_carte__carte:hover i {
+  rotate: 360deg;
 }
 .conteneur_carte__conteneur_texte {
   display: flex;
@@ -328,6 +342,7 @@ li {
   justify-content: space-around;
   padding: 10px;
   width: 84%;
+  transition: all 0.8s;
 }
 .conteneur_carte__prix {
   font-weight: 700;
@@ -336,6 +351,21 @@ li {
   align-items: center;
   position: relative;
   top: 10px;
+}
+.conteneur_carte__coche {
+  width: 60px;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -60px;
+  height: 100%;
+  transition: all 0.5s;
+}
+.conteneur_carte__coche i {
+  color: white;
+  transition-duration: 0.8s;
 }
 .conteneur_carte h3 {
   font-size: 18px;
@@ -367,9 +397,9 @@ li {
   margin-top: 20px;
   font-weight: 700;
   cursor: pointer;
+  transition: all 0.5s;
 }
 .commande__btn:hover {
   transform: scale(1.1);
-  transition-duration: 0.5s;
-  box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.986);
+  box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.75);
 }/*# sourceMappingURL=main.css.map */
