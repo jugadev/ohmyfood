@@ -108,15 +108,15 @@ ul {
   position: fixed;
   z-index: 3;
   flex-direction: column;
-  -webkit-animation: chargement_accueil 0s 2.5s forwards;
-          animation: chargement_accueil 0s 2.5s forwards;
+  -webkit-animation: chargement_accueil 0s 3s forwards;
+          animation: chargement_accueil 0s 3s forwards;
 }
 .accueil__chargement {
   display: block;
   width: 200px;
   height: 200px;
 }
-.accueil__chargement p {
+.accueil p {
   font-family: "Shrikhand", sans-serif;
   text-align: center;
   font-size: 30px;
@@ -124,10 +124,34 @@ ul {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  -webkit-animation: chargement 1.5s linear 2 both;
-          animation: chargement 1.5s linear 2 both;
+  -webkit-animation: chargement 2s linear 2 both;
+          animation: chargement 2s linear 2 both;
+  -webkit-animation-delay: 0.2;
+          animation-delay: 0.2;
+}
+.accueil__cercle {
+  position: relative;
+  left: 90px;
+  top: 115px;
+  width: 17.6px;
+  height: 17.6px;
+  border-radius: 17.6px;
+  box-shadow: 44px 0px 0 0 rgba(185, 135, 233, 0.2), 35.6px 26px 0 0 rgba(185, 135, 233, 0.4), 13.64px 41.8px 0 0 rgba(185, 135, 233, 0.6), -13.64px 41.8px 0 0 rgba(185, 135, 233, 0.8), -35.6px 26px 0 0 #b987e9;
+  -webkit-animation: rotation 1.5s 2 linear, chargement 2s linear 2 both;
+          animation: rotation 1.5s 2 linear, chargement 2s linear 2 both;
 }
 
+@-webkit-keyframes rotation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  to {
+    transform: rotate(360deg);
+  }
+}
 /*header*/
 header {
   width: 100%;
