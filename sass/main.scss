@@ -239,7 +239,7 @@ p{
             padding: 10px 0 10px 10px;
             position: relative;
         
-            & i{  
+            & i.fa-regular.fa-heart{  
             justify-content: end;
             display: flex;
             position: absolute;
@@ -247,7 +247,7 @@ p{
             bottom: 25px;
             font-size: 25px;
            background-color: white;
-       
+            
            @include heart_hover
             }
         }

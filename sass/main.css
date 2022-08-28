@@ -313,7 +313,7 @@ li {
   padding: 10px 0 10px 10px;
   position: relative;
 }
-.restaurants__texte_conteneur i {
+.restaurants__texte_conteneur i.fa-regular.fa-heart {
   justify-content: end;
   display: flex;
   position: absolute;
@@ -322,13 +322,14 @@ li {
   font-size: 25px;
   background-color: white;
 }
-.restaurants__texte_conteneur i:hover {
+.restaurants__texte_conteneur i.fa-regular.fa-heart:hover {
   background: linear-gradient(250deg, #FF79DA, #9356DC);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: linear-gradient(250deg, #FF79DA, #9356DC);
   color: transparent;
   font-weight: 900;
+  transition-duration: 0.3s;
 }
 
 /* FOOTER */
@@ -398,6 +399,7 @@ li {
   -webkit-text-fill-color: linear-gradient(250deg, #FF79DA, #9356DC);
   color: transparent;
   font-weight: 900;
+  transition-duration: 0.3s;
 }
 
 .conteneur_carte {
