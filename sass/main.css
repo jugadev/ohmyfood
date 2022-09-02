@@ -169,8 +169,8 @@ header img.logo {
   height: 100%;
 }
 header a {
-  position: relative;
-  right: 20%;
+  position: absolute;
+  left: 5%;
   font-size: 20px;
 }
 
@@ -215,9 +215,10 @@ header a {
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   color: white;
   box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.25);
-  width: 50%;
+  width: 55%;
   margin-top: 20px;
   font-weight: 700;
+  font-size: 16px;
   cursor: pointer;
   transition: all 0.5s;
 }
@@ -353,7 +354,7 @@ li {
   -webkit-text-fill-color: linear-gradient(250deg, #FF79DA, #9356DC);
   color: transparent;
   font-weight: 900;
-  transition-duration: 0.3s;
+  transition-duration: 0.8s;
 }
 
 /* FOOTER */
@@ -406,8 +407,8 @@ li {
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-around;
-  padding: 15px 0;
+  justify-content: space-between;
+  padding: 15px 30px;
 }
 .menu h1 {
   font-family: "Shrikhand", sans-serif;
@@ -423,7 +424,7 @@ li {
   -webkit-text-fill-color: linear-gradient(250deg, #FF79DA, #9356DC);
   color: transparent;
   font-weight: 900;
-  transition-duration: 0.3s;
+  transition-duration: 0.8s;
 }
 
 .conteneur_carte {
@@ -436,7 +437,7 @@ li {
   font-weight: 400;
   color: #737373;
   border-bottom: solid 3px #99E2D0;
-  width: 13%;
+  width: 45px;
   margin: 10px;
 }
 .conteneur_carte__carte {
@@ -468,7 +469,7 @@ li {
   flex-direction: column;
   justify-content: space-around;
   padding: 10px;
-  width: 84%;
+  width: 90%;
   transition: all 0.3s;
 }
 .conteneur_carte__prix {
@@ -508,6 +509,18 @@ li {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.conteneur_carte__carte:nth-child(2) {
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+}
+.conteneur_carte__carte:nth-child(3) {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+.conteneur_carte__carte:nth-child(4) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
 
 .commande {
   display: flex;
@@ -521,13 +534,84 @@ li {
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   color: white;
   box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.25);
-  width: 50%;
+  width: 55%;
   margin-top: 20px;
   font-weight: 700;
+  font-size: 16px;
   cursor: pointer;
   transition: all 0.5s;
 }
 .commande__btn:hover {
   transform: scale(1.1);
   box-shadow: 0px 5px 9px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width: 768px) {
+  /*FONCTIONNEMENT */
+  .étapes {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .explication {
+    display: flex;
+    flex-direction: column;
+  }
+  .explication__étape {
+    width: 30%;
+  }
+  /* RESTAURANTS */
+  .restaurants {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+  .restaurants__carte_conteneur {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .restaurants__restaurant {
+    width: 45%;
+  }
+  .restaurants__restaurant__carte_restaurant {
+    width: 100%;
+  }
+  /*MENU*/
+  .conteneur_carte__carte:hover .conteneur_carte__conteneur_texte {
+    width: 85%;
+  }
+  .conteneur_carte__conteneur_texte {
+    width: 90%;
+  }
+}
+@media (min-width: 998px) {
+  /* RESTAURANTS */
+  .restaurants {
+    padding: 30px;
+  }
+  .restaurants__restaurant {
+    width: 24%;
+  }
+  /*MENU*/
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu__conteneur {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .conteneur_carte {
+    width: 50%;
+  }
+  .conteneur_carte__carte:hover .conteneur_carte__conteneur_texte {
+    width: 80%;
+  }
+  .conteneur_carte__conteneur_texte {
+    width: 90%;
+  }
 }/*# sourceMappingURL=main.css.map */
