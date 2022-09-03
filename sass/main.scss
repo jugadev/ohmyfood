@@ -37,6 +37,7 @@ ul{
       }
       75% {
         transform: translateY(5px);
+        opacity: 0;
       }
       100% {
         transform: translateY(0px);
@@ -132,8 +133,9 @@ i{
     position: relative;
     right: 13px;
 }
-p{
+h2{
     font-size: 20px;
+    font-weight: 500;
 }
 }
 
@@ -318,10 +320,10 @@ p{
 
 .conteneur_carte{
     @include conteneur_carte;
-    &__carte:nth-child(2){animation-delay: 0ms;}  
-&__carte:nth-child(3){animation-delay: 100ms;}
-&__carte:nth-child(4){animation-delay: 200ms;}
-
+    &__carte:nth-child(2){animation-delay: 100ms;}  
+&__carte:nth-child(3){animation-delay: 200ms;}
+&__carte:nth-child(4){animation-delay: 300ms;}
+&__carte:nth-child(5){animation-delay: 400ms;}
 }
 
 
