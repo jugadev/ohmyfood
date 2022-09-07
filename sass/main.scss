@@ -26,24 +26,22 @@ ul{
     padding: 0;
   }
 
-  @keyframes apparition_menu{
-    0% {
-        transform: translateY(30px);
+  @keyframes apparition_cartes{
+    0%{
+        opacity: 0;
+    }
+
+    50% { 
         opacity: 0;
       }
-      66% {
-        transform: translateY(10px);
-        opacity: 0;
-      }
-      75% {
-        transform: translateY(5px);
-        opacity: 0;
-      }
-      100% {
-        transform: translateY(0px);
+
+    100% {
         opacity: 1;
       }
   }
+  
+  
+
 
 @keyframes chargement_accueil{
     to{
@@ -61,6 +59,11 @@ ul{
      }
      100%{
         opacity: 1;
+     }
+  }
+@keyframes rotation {
+    to {
+        transform: rotate(360deg);
      }
   }
 
@@ -107,11 +110,7 @@ ul{
 }
 }
 
-@keyframes rotation {
-    to {
-        transform: rotate(360deg);
-     }
-  }
+
 
 
             /*header*/
@@ -305,7 +304,10 @@ h2{
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    padding: 15px 30px;
+    padding: 15px 30px;}
+   &__conteneur{
+    animation: apparition_cartes 2s forwards linear;
+   
     }
     & h1{
         @include police_logo_titre;
@@ -318,13 +320,20 @@ h2{
     }
 }
 
+.conteneur_carte:nth-child(1) {animation-delay: 200ms;}
+.conteneur_carte:nth-child(2) {animation-delay: 500ms;}
+.conteneur_carte:nth-child(3) {animation-delay: 800ms;}
+
 .conteneur_carte{
-    @include conteneur_carte;
-    &__carte:nth-child(2){animation-delay: 100ms;}  
-&__carte:nth-child(3){animation-delay: 200ms;}
-&__carte:nth-child(4){animation-delay: 300ms;}
-&__carte:nth-child(5){animation-delay: 400ms;}
+     
+    @include conteneur_carte; 
+    &__carte:nth-child(2) {animation-delay: 150ms;}
+    &__carte:nth-child(3) {animation-delay: 300ms;}
+    &__carte:nth-child(4) {animation-delay: 450ms;}
+    &__carte:nth-child(5) {animation-delay: 600ms;}
 }
+
+
 
 
 .commande{

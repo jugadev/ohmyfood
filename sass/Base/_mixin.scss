@@ -13,7 +13,7 @@ border: none;
 background: linear-gradient(175deg, #FF79DA, #9356DC);
 color: white;
 box-shadow: 0px 5px 9px 0px rgb(0 0 0 / 25%);
-width: 55%;
+width: 230px;
 margin-top: 20px;
 font-weight: 700;
 font-size: 16px;
@@ -22,15 +22,15 @@ transition: all 0.5s;
 &:hover{
     transform: scale(1.10);
     box-shadow: 0px 5px 9px 0px rgb(0 0 0 / 75%);
-    
+    opacity: 0.8;
 }
 }   
 
 @mixin heart_hover{
      &:hover {
-    background: linear-gradient(250deg, #FF79DA, #9356DC);
+    background: linear-gradient(29deg, #FF79DA, #9356DC);
     background-clip: text;
-    -webkit-text-fill-color: linear-gradient(250deg, #FF79DA, #9356DC);
+    -webkit-text-fill-color: linear-gradient(29deg, #FF79DA, #9356DC);
     color: transparent;
     font-weight: 900;
     transition-duration: 0.8s;
@@ -92,6 +92,7 @@ font-size: 15px;
     display: flex;
     flex-direction: column;
     padding: 15px 20px;
+    animation: apparition_cartes 2s forwards linear;
 & h2{
     font-size: 18px;
     font-weight: 400;
@@ -114,14 +115,14 @@ font-size: 15px;
     position: relative;
     overflow: hidden;
     transition: all 0.8s;
-    animation: apparition_menu 1.5s forwards linear;
+    animation: apparition_cartes 2s forwards linear;
     &:hover{
         & .conteneur_carte__coche{
-            right: 0px;
+            right: 0px
         }
        
         & .conteneur_carte__conteneur_texte{
-            width: 72%;
+            width: 65%;
         }
         & i{
             rotate: (360deg);
@@ -133,7 +134,7 @@ font-size: 15px;
     flex-direction: column;
     justify-content: space-around;
     padding: 10px;
-    width: 90%;
+    width: 85%;
     transition: all 0.3s;
 }
 &__prix{
